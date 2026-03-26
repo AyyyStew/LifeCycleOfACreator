@@ -1,0 +1,121 @@
+ Topic  Count                                              Name
+    -1    958              -1_relationship_emotion_thought_game
+     0    107                   0_dopamine_game_pleasure_gaming
+     1     80                 1_adhd_medication_brain_attention
+     2     62                          2_mom_friend_feeling_dad
+     3     58               3_trauma_dissociation_emotion_brain
+     4     52 4_motivation_willpower_discipline_procrastination
+     5     51                 5_ego_meditation_experience_logic
+     6     50                 6_gender_masculinity_dude_society
+     7     47                       7_anger_victim_boss_emotion
+     8     46               8_addiction_substance_cannabis_weed
+     9     44                         9_sleep_bed_caffeine_hour
+    10     42          10_relationship_friend_rejection_feeling
+    11     37                   11_passion_job_career_happiness
+    12     36           12_meditation_technique_practice_breath
+    13     35      13_depression_medication_antidepressant_drug
+    14     34                     14_coach_client_coaching_goal
+    15     30                      15_burnout_employee_job_work
+    16     29                 16_pornography_porn_addiction_use
+    17     28           17_emotion_divorce_partner_relationship
+    18     28          18_narcissist_narcissism_parent_boundary
+    19     27            19_extrovert_introvert_anxiety_contact
+    20     26     20_attachment_love_relationship_situationship
+    21     25              21_depression_brain_emotion_disorder
+    22     24        22_syndrome_circumstance_future_adaptation
+    23     24                      23_kid_parent_child_homework
+    24     23                  24_content_creator_streamer_game
+    25     23            25_advice_relationship_girlfriend_love
+    26     23                     26_boundary_parent_family_mom
+    27     22                     27_anxiety_panic_attack_heart
+    28     21             28_therapist_therapy_patient_response
+    29     21                     29_hour_technology_work_habit
+    30     20             30_interaction_fun_conversation_group
+    31     20                         31_dad_parent_brother_mom
+    32     20            32_community_internet_streamer_content
+    33     19                  33_sex_asexuality_penis_erection
+    34     19            34_crisis_accomplishment_happiness_mba
+    35     19                     35_anxiety_thought_dread_fear
+    36     18           36_friend_toast_relationship_confidence
+    37     18                        37_player_game_team_league
+    38     18                38_shame_achievement_self_progress
+    39     18                     39_comparison_ego_esteem_self
+    40     17             40_psychosis_chatbot_risk_engineering
+    41     16                 41_identity_motivation_career_job
+    42     16                   42_childhood_grief_parent_fault
+    43     16               43_kid_intelligence_intellect_shack
+    44     16            44_insecurity_baldness_hair_stereotype
+    45     15      45_resolution_perfectionism_progress_athlete
+    46     15             46_generation_formula_despair_college
+    47     14                     47_boredom_brain_circuit_flow
+    48     14                48_bully_aggression_bullying_group
+    49     14              49_loneliness_arousal_being_solitude
+    50     13            50_purpose_meaning_improvement_retreat
+    51     13                   51_belief_view_gun_conversation
+    52     13           52_flag_relationship_partner_compromise
+    53     12               53_suicide_suicidality_help_illness
+    54     11                   54_vision_contact_introvert_eye
+    55     11                  55_puer_fantasy_pueris_archetype
+    56     10                56_breakup_relationship_love_style
+    57     10                           57_food_weight_diet_fat
+
+=== TOP WORDS PER TOPIC ===
+
+Topic   0: dopamine, game, pleasure, gaming, addiction, brain, technology, activity, gamer, hour
+Topic   1: adhd, medication, brain, attention, deficit, kid, depression, diagnosis, symptom, hour
+Topic   2: mom, friend, feeling, dad, school, thought, parent, twitch, kid, music
+Topic   3: trauma, dissociation, emotion, brain, identity, cptsd, self, disorder, guide, response
+Topic   4: motivation, willpower, discipline, procrastination, action, task, habit, gym, impulse, brain
+Topic   5: ego, meditation, experience, logic, astrology, brain, medicine, thought, science, game
+Topic   6: gender, masculinity, dude, society, compliment, research, loneliness, app, being, experience
+Topic   7: anger, victim, boss, emotion, behavior, situation, doormat, relationship, hatred, control
+Topic   8: addiction, substance, cannabis, weed, rehab, receptor, use, alcohol, thc, brain
+Topic   9: sleep, bed, caffeine, hour, tiredness, night, brain, energy, morning, rhythm
+Topic  10: relationship, friend, rejection, feeling, girl, love, date, conversation, boundary, pie
+Topic  11: passion, job, career, happiness, college, portfolio, design, company, money, choice
+Topic  12: meditation, technique, practice, breath, energy, mindfulness, body, state, eye, chi
+Topic  13: depression, medication, antidepressant, drug, effect, withdrawal, study, doctor, guideline, treatment
+Topic  14: coach, client, coaching, goal, feedback, group, week, job, review, performance
+Topic  15: burnout, employee, job, work, boss, company, employer, freelancer, workplace, client
+Topic  16: pornography, porn, addiction, use, validation, sex, relationship, partner, esteem, study
+Topic  17: emotion, divorce, partner, relationship, labor, dude, breakup, anger, volatility, ick
+Topic  18: narcissist, narcissism, parent, boundary, symbol, behavior, child, inside, guilt, mom
+Topic  19: extrovert, introvert, anxiety, contact, adrenaline, party, situation, eye, introversion, brain
+Topic  20: attachment, love, relationship, situationship, app, partner, profile, soulmate, sex, intimacy
+Topic  21: depression, brain, emotion, disorder, directory, panic, future, control, body, root
+Topic  22: syndrome, circumstance, future, adaptation, failure, bias, crisis, quarter, readiness, environment
+Topic  23: kid, parent, child, homework, parenting, adhd, son, attention, limit, game
+Topic  24: content, creator, streamer, game, expectation, job, school, week, success, streaming
+Topic  25: advice, relationship, girlfriend, love, partner, date, dude, respect, being, internet
+Topic  26: boundary, parent, family, mom, holiday, conversation, consequence, responsibility, power, relationship
+Topic  27: anxiety, panic, attack, heart, rate, control, thought, compulsion, bacteria, disorder
+Topic  28: therapist, therapy, patient, response, treatment, client, pain, coaching, need, training
+Topic  29: hour, technology, work, habit, adenosine, dopamine, week, morning, phone, weekend
+Topic  30: interaction, fun, conversation, group, friend, intimidation, interest, dope, connection, talk
+Topic  31: dad, parent, brother, mom, family, conversation, kid, zach, father, school
+Topic  32: community, internet, streamer, content, smash, troll, appeal, creator, predator, story
+Topic  33: sex, asexuality, penis, erection, birth, orgasm, condom, dysfunction, sexuality, bdsm
+Topic  34: crisis, accomplishment, happiness, mba, school, research, marketing, career, ego, psychologist
+Topic  35: anxiety, thought, dread, fear, dad, dog, nostril, reality, feeling, reassurance
+Topic  36: friend, toast, relationship, confidence, conversation, girl, feeling, one, league, coach
+Topic  37: player, game, team, league, legend, season, dota, tournament, confidence, hour
+Topic  38: shame, achievement, self, progress, emotion, identity, therapy, version, situation, fear
+Topic  39: comparison, ego, esteem, self, identity, image, nature, nurse, dot, doctor
+Topic  40: psychosis, chatbot, risk, engineering, delusion, user, information, access, factor, company
+Topic  41: identity, motivation, career, job, willpower, victim, love, self, action, meditation
+Topic  42: childhood, grief, parent, fault, anger, friend, identity, school, future, therapist
+Topic  43: kid, intelligence, intellect, shack, mansion, identity, school, expectation, grade, physicist
+Topic  44: insecurity, baldness, hair, stereotype, mask, warmth, curvature, confidence, gym, expectation
+Topic  45: resolution, perfectionism, progress, athlete, failure, procrastination, goal, perfection, pound, sugar
+Topic  46: generation, formula, despair, college, loan, job, internet, prosperity, trajectory, work
+Topic  47: boredom, brain, circuit, flow, game, dopamine, technology, internet, platform, tock
+Topic  48: bully, aggression, bullying, group, victim, boyfriend, friend, humiliation, fun, girl
+Topic  49: loneliness, arousal, being, solitude, isolation, emotion, monk, teenager, serotonin, relationship
+Topic  50: purpose, meaning, improvement, retreat, advice, nihilism, hour, self, brain, gym
+Topic  51: belief, view, gun, conversation, hate, teacher, crypto, malice, shooter, reality
+Topic  52: flag, relationship, partner, compromise, conflict, love, clinginess, dependency, excuse, article
+Topic  53: suicide, suicidality, help, illness, depression, attempt, risk, health, hospitalization, disease
+Topic  54: vision, contact, introvert, eye, authenticity, charisma, attractiveness, extrovert, communication, speech
+Topic  55: puer, fantasy, pueris, archetype, potential, puera, work, complex, commitment, lecture
+Topic  56: breakup, relationship, love, style, closure, attachment, recovery, support, transference, factor
+Topic  57: food, weight, diet, fat, sugar, body, blood, vitamin, insulin, bacteria

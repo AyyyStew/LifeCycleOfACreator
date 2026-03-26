@@ -936,3 +936,95 @@ for dim in total_change.argsort()[::-1][:3]:
         print(f'    [Era {int(df["era"].iloc[idx])+1}]  {df["published_at"].iloc[idx].date()}'
               f'  {df["title"].iloc[idx][:65]}')
     print()
+
+# %% [markdown]
+# ---
+# ## Step 4 — BERTTopic Cluster Heatmap
+#
+# The log-odds analysis above shows which words are *statistically distinctive* to each
+# era. This section asks a complementary question: which **semantic topic clusters**
+# (computed by BERTTopic from the full transcript embeddings) dominate each era, and
+# how does that change over time?
+#
+# BERTTopic groups videos by semantic similarity using UMAP + HDBSCAN on the pre-computed
+# embeddings, then labels each cluster with its most representative nouns. The heatmap
+# below shows what proportion of each era's videos fell into each cluster — sorted by
+# total volume so the channel's biggest recurring themes sit at the top.
+#
+# **Run `BERTTopic.ipynb` first** to generate `video_topics_labeled.csv`.
+
+# %%
+import seaborn as sns
+
+_topics_path = 'video_topics_labeled.csv'
+
+try:
+    topics_df = pd.read_csv(_topics_path)
+except FileNotFoundError:
+    raise FileNotFoundError(
+        f"'{_topics_path}' not found — run BERTTopic.ipynb first to generate it."
+    )
+
+# Join BERTTopic assignments onto df (which already has era column)
+merged_bt = df[['video_id', 'era']].merge(topics_df, on='video_id', how='inner')
+print(f"Matched {len(merged_bt)} / {len(df)} era videos to BERTTopic assignments")
+
+# Drop outliers (topic == -1)
+merged_bt = merged_bt[merged_bt['topic'] != -1]
+
+# Era labels with date ranges
+era_labels_bt = [
+    f"Era {i+1}\n"
+    f"{df.loc[df['era']==i, 'published_at'].dt.strftime('%b \'%y').iloc[0]}"
+    f" – "
+    f"{df.loc[df['era']==i, 'published_at'].dt.strftime('%b \'%y').iloc[-1]}"
+    for i in range(n_eras)
+]
+
+# Count per era × topic_label
+ct_bt  = pd.crosstab(merged_bt['era'], merged_bt['topic_label'])
+ct_all_bt = pd.crosstab(df['era'], df['era'])  # total videos per era incl outliers
+
+# Use total era size (from df) as denominator so % is honest
+era_totals = df.groupby('era').size()
+pct_bt = ct_bt.div(era_totals, axis=0) * 100
+pct_bt.index = [era_labels_bt[i] for i in pct_bt.index]
+
+# Sort topics by total volume across all eras
+topic_order_bt = pct_bt.sum(axis=0).sort_values(ascending=False).index.tolist()
+pct_bt = pct_bt[topic_order_bt]
+
+n_t = len(topic_order_bt)
+n_e = len(era_labels_bt)
+
+sns.set_theme(style='white', font='DejaVu Sans')
+fig, ax = plt.subplots(figsize=(n_e * 1.6, n_t * 0.52 + 2))
+
+sns.heatmap(
+    pct_bt.T,
+    annot=True, fmt='.0f', cmap='YlOrRd',
+    linewidths=0.6, linecolor='#f5f5f5',
+    ax=ax, vmin=0,
+    annot_kws={'size': 8, 'weight': 'bold'},
+    cbar_kws={'label': "% of era's videos", 'shrink': 0.6, 'pad': 0.02},
+)
+
+ax.set_title('Topic prevalence by era', fontsize=14, fontweight='bold', pad=16, loc='left')
+ax.text(0, 1.02,
+        'HealthyGamerGG  ·  BERTTopic clusters  ·  % of all videos in each era (outliers excluded from rows)',
+        transform=ax.transAxes, fontsize=8, color='#666666', va='bottom')
+ax.set_xlabel('')
+ax.set_ylabel('')
+ax.tick_params(axis='x', rotation=0, labelsize=8.5, length=0)
+ax.tick_params(axis='y', rotation=0, labelsize=9,   length=0)
+ax.xaxis.tick_top()
+ax.xaxis.set_label_position('top')
+
+for spine in ax.spines.values():
+    spine.set_visible(True)
+    spine.set_linewidth(0.8)
+    spine.set_edgecolor('#cccccc')
+
+plt.tight_layout()
+plt.savefig('era_topic_heatmap.png', bbox_inches='tight', dpi=150)
+plt.show()
