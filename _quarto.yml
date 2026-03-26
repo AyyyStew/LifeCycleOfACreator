@@ -1,0 +1,19 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Life Cycle of a Creator"
+
+format:
+  html:
+    theme: darkly
+    toc: true
+    toc-depth: 3
+    toc-title: "Contents"
+    code-fold: true
+    code-summary: "Show code"
+    fig-responsive: true
+    smooth-scroll: true
+    highlight-style: dracula
+    lightbox: true
