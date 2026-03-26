@@ -1,8 +1,7 @@
 # %% [markdown]
 # # BERTTopic on Video Transcripts
 #
-# Aggregates transcript chunks to video level, filters to nouns via spaCy,
-# then fits BERTTopic using pre-computed mean-pooled embeddings.
+# Aggregates transcript chunks to video level, filters to nouns via spaCy, then fits BERTTopic using pre-computed mean-pooled embeddings.
 
 # %% Imports
 # !pip install bertopic spacy umap-learn hdbscan tqdm -q

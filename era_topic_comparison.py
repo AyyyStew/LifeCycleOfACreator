@@ -1,8 +1,7 @@
 # %% [markdown]
 # # Era vs BERTTopic Comparison
 #
-# Compares CUSUM-detected eras (from era_topic_analysis) with BERTTopic clusters.
-# Era detection is reproduced exactly from era_topic_analysis.py defaults.
+# Compares CUSUM-detected eras (from era_topic_analysis) with BERTTopic clusters. Era detection is reproduced exactly from era_topic_analysis.py defaults.
 
 # %% Imports
 import re

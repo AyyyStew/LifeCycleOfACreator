@@ -7,3 +7,5 @@ backups/*.sql
 *.png
 !era_topic_analysis_files/figure-html/**
 !era_topic_analysis_files/figure-html/
+/.quarto/
+**/*.quarto_ipynb
